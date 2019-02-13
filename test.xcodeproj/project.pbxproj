@@ -10,6 +10,16 @@
 		E80579ED2214BCA8009105E8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E80579EC2214BCA8009105E8 /* main.cpp */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E8057A0A2214C48A009105E8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8057A062214C48A009105E8 /* test2.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E80579FC2214C48A009105E8;
+			remoteInfo = test2;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		E80579E72214BCA8009105E8 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -25,6 +35,7 @@
 /* Begin PBXFileReference section */
 		E80579E92214BCA8009105E8 /* test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = test; sourceTree = BUILT_PRODUCTS_DIR; };
 		E80579EC2214BCA8009105E8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		E8057A062214C48A009105E8 /* test2.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = test2.xcodeproj; path = test2/test2.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +68,18 @@
 		E80579EB2214BCA8009105E8 /* test */ = {
 			isa = PBXGroup;
 			children = (
+				E8057A062214C48A009105E8 /* test2.xcodeproj */,
 				E80579EC2214BCA8009105E8 /* main.cpp */,
 			);
 			path = test;
+			sourceTree = "<group>";
+		};
+		E8057A072214C48A009105E8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8057A0B2214C48A009105E8 /* test2 */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,12 +126,28 @@
 			mainGroup = E80579E02214BCA8009105E8;
 			productRefGroup = E80579EA2214BCA8009105E8 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E8057A072214C48A009105E8 /* Products */;
+					ProjectRef = E8057A062214C48A009105E8 /* test2.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				E80579E82214BCA8009105E8 /* test */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E8057A0B2214C48A009105E8 /* test2 */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = test2;
+			remoteRef = E8057A0A2214C48A009105E8 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E80579E52214BCA8009105E8 /* Sources */ = {
